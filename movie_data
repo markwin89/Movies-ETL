@@ -1,0 +1,3 @@
+"postgresql://[user]:[password]@[location]:[port]/[database]"
+
+select * from movies
