@@ -5,7 +5,8 @@ Clean and parse the extracted data with the ETL function.  Merge data sets and u
 
 ## Process 
 ### ETL_function_test
-ETL function has to read the files from Kaggle metadata, MovieLens ratings CSV, and Wikipedia movie json as a Pandas DF. Created 3 variables to equal the file names. 
+ETL function has to read the files from Kaggle metadata, MovieLens ratings CSV, and Wikipedia movie json as a Pandas DF. Created 3 variables to equal the file names.
+
   - Checking the wiki-movies dataframe. 
   - ![Check the wiki-movies DF](https://user-images.githubusercontent.com/101272613/173411886-c35be98c-7c91-452e-978b-472ae985549c.PNG)
   - Checking the kaggle dataframe. 
@@ -18,6 +19,7 @@ Created the function to clean the movie list.
 Read the files from Kaggle metadata, MovieLens ratings CSV, and Wikipedia movie json as a Pandas DF.
 Removed the null values from "Box office" column.  Cleaned the box office, budget column, release date, and running time column to set a standard format.  
 Created 3 variables to equal the file names. 
+
   - Checking the wiki-movies dataframe after cleaning
 ![wiki movies DF](https://user-images.githubusercontent.com/101272613/173415552-b312cdf6-492e-4d02-bd78-559f1c49c67e.PNG)
   - Checking the wiki-movies dataframe count
@@ -27,6 +29,7 @@ Created 3 variables to equal the file names.
 Created variables to clean the Kaggle metadata.
 Merging two data frames into the movies DF, dropped unnecessary columns from the merged DF, and fill in missing data by def function. 
 Created 3 variables to equal the file names.
+
   - Checking the merged data count. 
 ![movies df count](https://user-images.githubusercontent.com/101272613/173417490-94765e24-3e1c-4183-a6e1-e277687e49ca.PNG)
   - Checking the merged data with ratings count.
@@ -34,6 +37,7 @@ Created 3 variables to equal the file names.
 
 ### ETL_clean_database
 Using sqlachemy and psycopg2 to import the revised and cleaned data sets to the database.  
+
   - Loading the data to PostgreSQL
 ![PostgresSQL](https://user-images.githubusercontent.com/101272613/173417892-57176e9a-301b-4b64-a60b-89b36141349d.PNG)
 
